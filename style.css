@@ -1,3 +1,5 @@
+/*removing padding and margin from all elements*/
+/* the mentioned astric means that all will be the same in this structure*/
 *{
     padding: 0;
     margin: 0;
@@ -5,42 +7,44 @@
 }
 .container{
     background: black;
-    min-height: 100vh;
+    min-height: 100vh; /*to fit the whole page*/
     width: 100%;
     overflow: hidden;/*hide the extra*/
-    position: relative;
+    position: relative; /*to make the icons same as this*/
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; 
+    justify-content: space-between; /*space between the logo and the links*/
+    align-items: center; /*make them on the same line*/
     width: 80%;
-    margin: auto;
+    margin: auto; /*to be kindof in the middle not stick to the corners*/
+    padding: 20px 0;
 
 }
 .logo{
-    width: 40px;
+    width: 40px; /*just size*/
 
 }
-ul li {
-    display: inline-block;
+ul li { /*all links*/
+    display: inline-block; /*horizontal + removes the bullets*/
+    list-style: none; /*inline does its duty already*/
 }
-ul li a{
+ul li a{ /*styling the links*/
     color:#fff ;
-    text-decoration: none;
-    margin: 0 10px;
+    text-decoration: none; /*for removing the underlines*/
+    margin: 0 10px; /*separate between every word and the other horizontally*/
     
 }
-.content{
+.content{ /*for the paragraph and the photos as overall */
     display: flex;
     justify-content: space-between;/* make space between the pic and the text*/
     align-items: center;/* the paragraph be at the same line the pic in*/
     width: 80%; /*content*/
-    margin: auto;
+    margin: auto; /*to be in the middle*/
 }
 
-.content .text{
-    width: 40%; /*not to exced its limit*/
+.content .text{ /*text only*/
+    width: 40%; /*not to be written as a whole sentence to broke it and gather it in specific part*/
     color: white;
 }
 
@@ -51,15 +55,15 @@ ul li a{
 
 .content .text p{
     font-size: 18px;
-    margin: 20px 0;
+    margin: 20px 0; /*space between the tittle and the paragraph*/
 }
 
 .content .text a{
     text-decoration: none;
     background-color: white;
     color: #000;
-    padding: 8px 15px;
-    border-radius: 20px;
+    padding: 8px 15px; /*padding to the box or the button*/
+    border-radius: 20px; /*not a sharp rectangular*/
 }
 .content .image{
     width: 30%;
@@ -69,10 +73,10 @@ ul li a{
     width: 180px;
 }
 .icons{
-    position: absolute;
+    position: absolute; /*make same as the container*/
     bottom: 20px;
-    left:50%;
-    transform: translateX(-50%);
+    left:50%; 
+    transform: translateX(-50%); /*to centerize it */
 
 }
 
@@ -83,5 +87,6 @@ ul li a{
 }
 
 .icons img:hover{
-    transform: scale(1.2);
+    transform: scale(1.2); 
 }
+
